@@ -2,14 +2,12 @@ class HumanProject
   attr_reader :client
 
   def run
-    print "How old are you? "
-    age = gets.chomp()
-    print "How tall are you? "
-    height = gets.chomp()
-    print "How much do you weigh? "
-    weight = gets.chomp()
+    print "What is the name of your human? "
+    name = gets.chomp()
+    print "What is your human's activity? "
+    activity = gets.chomp()
 
-    puts "So, you're #{age} years old, #{height} tall and #{weight} heavy."
+    puts "#{name} is #{activity}."
   end
 
 end
