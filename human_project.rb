@@ -1,16 +1,22 @@
 class HumanProject
   attr_reader :client
 
-  def run
+  def name
     print "What is the name of your human? "
-    name = gets.chomp()
-    print "What is your human's activity? "
-    activity = gets.chomp()
+    @name = gets.chomp()
 
-    puts "#{name} is #{activity}."
+    puts "Your human's name is #@name."
+  end
+
+  def activity
+    print "What is your human's activity? "
+    @activity = gets.chomp()
+
+    puts "#@name is #@activity."
   end
 
 end
 
 human = HumanProject.new
-human.run
+human.name
+human.activity
