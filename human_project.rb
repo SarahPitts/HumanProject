@@ -3,6 +3,11 @@ class HumanProject
 
   def name
     puts "Hi, I'm the #{$0} script."
+    print "What your name? "
+    @username = gets.chomp()
+
+    puts "Hello #@username!"
+
     puts "Let's build a human today."
     print "What is the name of your human? "
     @name = gets.chomp()
@@ -11,7 +16,7 @@ class HumanProject
   end
 
   def gender
-    print "What is your human's gender?"
+    print "What is your human's gender? "
     @gender = gets.chomp()
 
     puts "#@name's gender is #@gender."
